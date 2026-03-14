@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="stagger mt-8 grid gap-5 md:grid-cols-2">
+      <section className="stagger mt-8">
         <article className="rounded-2xl border border-amber-100/20 bg-black/20 p-6">
           <p className="text-xs uppercase tracking-[0.25em] text-amber-300/90">Timeline</p>
           <h2 className="mt-3 text-3xl font-semibold text-amber-50">From Arrival To Disillusionment</h2>
@@ -53,23 +53,6 @@ export default function Home() {
               </li>
             ))}
           </ol>
-        </article>
-
-        <article className="rounded-2xl border border-amber-100/20 bg-black/20 p-6">
-          <p className="text-xs uppercase tracking-[0.25em] text-amber-300/90">Invitation</p>
-          <h2 className="mt-3 text-3xl font-semibold text-amber-50">An Invitation To Gatsby's Lawn</h2>
-          <div className="mt-5 rounded-2xl border border-amber-200/20 bg-[linear-gradient(140deg,rgba(210,177,109,0.14),rgba(8,20,26,0.66))] p-5">
-            <p className="text-xs uppercase tracking-[0.25em] text-amber-200/90">Saturday Night, West Egg</p>
-            <p className="mt-3 text-2xl text-amber-50">You are cordially invited</p>
-            <p className="mt-3 leading-7 text-stone-200">
-              Come for orchestras, rumors, and glittering chandeliers. Stay long enough to notice what
-              the champagne cannot hide.
-            </p>
-            <p className="mt-4 text-sm text-stone-300">Dress code: white linen, gold accents, and careful smiles.</p>
-          </div>
-          <p className="mt-5 text-stone-300">
-            The invitation format mirrors Fitzgerald's style: spectacle first, moral cost second.
-          </p>
         </article>
       </section>
     </div>
