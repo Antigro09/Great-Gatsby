@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #071118;
+  --foreground: #f7f0d6;
+  --panel: rgba(6, 12, 18, 0.62);
+  --ink-soft: #d7d0ba;
+  --gold: #d4b26a;
+  --teal: #2f8480;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+  --font-mono: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-cormorant), serif;
+  letter-spacing: 0.02em;
+}
+
+.site-bg {
+  background:
+    radial-gradient(circle at 82% 6%, rgba(43, 139, 131, 0.35), transparent 34%),
+    radial-gradient(circle at 12% 92%, rgba(206, 167, 87, 0.2), transparent 28%),
+    linear-gradient(160deg, #061018 0%, #09161e 40%, #04070e 100%);
+}
+
+.site-noise {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.035) 1px,
+    transparent 1px
+  );
+  background-size: 100% 3px;
+  pointer-events: none;
+}
+
+.fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.stagger > * {
+  animation: fade-up 0.6s ease-out both;
+}
+
+.stagger > *:nth-child(2) {
+  animation-delay: 110ms;
+}
+
+.stagger > *:nth-child(3) {
+  animation-delay: 220ms;
+}
+
+.stagger > *:nth-child(4) {
+  animation-delay: 330ms;
+}
+
+.gold-frame {
+  border: 1px solid rgba(212, 178, 106, 0.35);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(212, 178, 106, 0.08);
+  background: linear-gradient(145deg, rgba(9, 20, 27, 0.88), rgba(5, 11, 16, 0.9));
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
